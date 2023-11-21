@@ -22,9 +22,10 @@ nav{
   background-color: #3f73df;
   display: flex;
   color:white;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: .5rem 0;
   align-items: center;
+  gap: 1rem;
 }
 .wrapperUpperNav div.logo{
   display: flex;
@@ -49,7 +50,7 @@ nav{
 .wrapperUpperNav ul{
   display: flex;
   gap: 1rem;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .wrapperUpperNav a{
@@ -58,9 +59,14 @@ nav{
 }
 .wrapperUpperNav ul li:first-child a{
   color:#3f73df;
-  padding: 0.5rem 3rem;
+  padding: 0.3rem 2.5rem;
   background-color: white;
-
+  border-radius: 2px;
+}
+.wrapperUpperNav ul li a {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
 }
 .wrapperUpperNav .searchBar{
   position: relative;
@@ -75,8 +81,43 @@ nav{
   right: .7rem;
   top: 0.4rem;
   font-weight: bold;
+  font-size: 1.5rem;
 } 
-
+.material-symbols-outlined{
+  font-size: 1rem;
+}
 .wrapperLowerNav{
   display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  /* margin: auto; */
+}
+
+.wrapperLowerNav li{
+  display:flex;
+  flex-direction: column;
+  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapperLowerNav li img{
+  /* object-fit: cover; */
+  width: 4rem;
+}
+.wrapperLowerNav li a{
+  text-decoration: none;
+  color:black;
+}
+.wrapperLowerNav li a span.categoryTitle{
+  font-size: .8rem;
+  font-weight: normal;
+  margin-top: .2rem;
+  display:flex;
+  align-items: center;
+  font-weight: 500;
+}
+li.beautyToysAndMore{
+  width:9rem;
 }
